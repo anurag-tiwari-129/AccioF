@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Index</title>
+</head>
+<body>
+    <h1><b><u><center>1ST NOTES</center></u></b></h1>
+    <h2>Image Source</h2> <br>
+
+    <b>1st_class > 1(direct) + html || F1 > 1st_class > 1(direct) + html || 1.jpg</b> <br>
+    Direct reach <br>
+    <img src="1.jpg" alt="Direct reach"> <br> <br>
+    <!-- ------------------------------------------------------------- -->
+
+    <b>1st_class(source) > 2 , html || F1 > 1st_class(source) > 2 , html || ./2.png</b> <br>
+    Relative path start from current folder F1 where photo also present in current folder F1<br>
+    <img src="./2.png" alt="Relative path start from current folder 1st_class where photo also present in current folder 1st_class"> <br> <br>
+    <!-- ------------------------------------------------------------- -->
+
+    <b>F1(source) > 1st_class > 3 , html || ../1st_class/3.png</b> <br>
+    Relative path start from parent folder F1 where photo present in current folder 1st_class<br>
+    <img src="../1st_class/3.png" alt="Relative path start from parent folder F1 where photo present in current folder 1st_class"> <br> <br>
+    <!-- ------------------------------------------------------------- -->
+
+    <b>1st_class(source) > 4 , html || ../4.png</b> <br>
+    Relative path start from parent i.e., current folder 1st_class where photo also present in current folder 1st_class<br>
+    <img src="../4.png" alt="Relative path start from parent i.e., current folder 1st_class where photo also present in current folder 1st_class"> <br> <br>
+    <!-- ------------------------------------------------------------- -->
+
+    <b>5</b> <br>
+    <b>5 , 1st_class(source don't have photo, it is outside) > html || F1 > 5 , 1st_class(source don't have photo, it is outside) > html || ./5.jpg</b> <br>
+    Relative path start from current folder 1st_class where photo is present outside the current folder <br>
+    <img src="./5.jpg" alt="Relative path start from current folder 1st_class where photo is present outside the current folder"> <br> <br>
+    <!-- ------------------------------------------------------------- -->
+
+    <b>F1(source) > 6 , 1st_class > html || ../6.png</b> <br>
+    Relative path start from parent folder F1 where photo is also present in parent folder F1 while html is present in the current folder that is 1st_class<br>
+    <img src="../6.png" alt="Relative path start from parent folder F1 where photo is also present in parent folder F1 while html is present in the current folder that is 1st_class"> <br> <br>
+    <!-- ------------------------------------------------------------- -->
+
+    <b>7</b> <br>
+    <b>Image( > 7) , 1st_class(source don't have 7)( > html) || F1 > Image( > 7) , 1st_class(source don't have 7)( > html) || ./7.png</b> <br>
+    Relative path start from current folder 1st_class where photo is present in another folder i.e., Image <br>
+    <img src="./7.png" alt="Relative path start from current folder 1st_class where photo is present in another folder i.e., Image"> <br> <br>
+    <!-- ------------------------------------------------------------- -->
+   
+    <b>F1(source) > Image( > 8) , 1st_class( > html) || ../Image/8.jpg</b> <br>
+    Relative path start from parent folder F1 where photo is present in another folder i.e., Image while html is present in current folder 1st_class <br>
+    <img src="../Image/8.jpg" alt="Relative path start from parent folder F1 where photo is present in Image folder while html is present in current folder 1st_class"> <br> <br>
+    <!-- ------------------------------------------------------------- -->
+
+    <b>9</b> <br>
+    <b>Image( > 9) , 1st_class(source don't have 9)( > html) || F1(source have 9 but inside the folder so it can't reach directly) > Image( > 9) , 1st_class( > html) || ../9.png</b> <br>
+    Relative path start from parent folder F1 where photo is present in another folder i.e., Image so it can't access directly. <br>
+    same with 1st_class parent folder, photo is present in another folder i.e., Image <br>
+    <img src="../9.png" alt="Relative path start from parent folder F1 where photo is present in another folder i.e., Image so it can't access directly. Same with 1st_class parent folder, photo is present in another folder i.e., Image"> <br> <br>
+    <!-- ------------------------------------------------------------- -->
+
+    <b>10</b> <br>
+    <b>F1 > 1st_class(source don't have direct access) > html , img > 10 || 1st_class(source don't have direct access) > html , img > 10 || ./10.jpg</b> <br>
+    Relative path start from current folder 1st_class where photo is present in img folder that is present inside the 1st_class<br>
+    <img src="./10.jpg" alt="Relative path start from current folder 1st_class where photo is present in img folder that is present inside the 1st_class"> <br> <br>
+    <!-- ------------------------------------------------------------- -->
+
+    <b>11</b> <br>  
+    <b>F1(source don't have direct access) > 1st_class > html , img > 11 || 1st_class(source don't have direct access) > html , img > 11 || ../11.jpg</b> <br>
+    Relative path start from current folder either F1 or 1st_class where photo is present in img folder that is present inside the 1st_class<br>
+    <img src="../11.jpg" alt="Relative path start from current folder either F1 or 1st_class where photo is present in img folder that is present inside the 1st_class"> <br> <br>
+    <!-- ------------------------------------------------------------- -->
+    
+    <b>F1(source) > 1st_class > html , img > 12 || ../1st_class/img/12.jpg</b> <br>
+    Relative path start from parent folder F1 where photo is present in img folder that is present inside the 1st_class<br>
+    <img src="../1st_class/img/12.jpg" alt="Relative path start from parent folder F1 where photo is present in img folder that is present inside the 1st_class"> <br> <br>
+    <!-- ------------------------------------------------------------- -->
+
+    <b>F1 > 1st_class(source) > html , img > 10 || 1st_class(source) > html , img > 10 || ./img/10.jpg</b> <br>
+    Relative path start from current folder 1st_class where photo is present in img folder that is present inside the 1st_class<br>
+    <img src="./img/10.jpg" alt="Relative path start from current folder 1st_class where photo is present in img folder that is present inside the 1st_class"> <br> <br>
+</body>
+</html>
