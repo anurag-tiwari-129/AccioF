@@ -7,60 +7,114 @@
 </head>
 <body>
     <header>
-        <h1><b><u><center>sitaram</center></u></b></h1>
-        <h1><b><u><center>4TH NOTES</center></u></b></h1>
+        <nav><h1><b><u><center>sitaram</center></u></b></h1></nav>
+        <nav><h1><b><u><center>4TH NOTES</center></u></b></h1></nav>
     </header>
     -----------------------------------------------------------------------
     <br>
     <!-- -------------------------------------------------------------- -->
 
     <main>
-      <section>
-        <h2>Tables</h2>
-        <table border="2" bgcolor="yellow" width="100%">
-            <tr bgcolor="red"> 
-                <th>Sr</th>
-                <th bgcolor="green">Name</th>
-            </tr>
-<!--  -->
-            <th bgcolor="orange">1st cell for th i.e., default
-                <td>hhh</td> 
-                <td bgcolor="white">Name</td>
-            </th>
-<!--  -->
-            <th>Sr</th>
-            <td><th>Address</th></td>
-            <th>Roll</th>
-<!-- ------------- -->
-            <tr>
-                <td>1</td>
-                <td>Koshal</td>
-            </tr>
-            <tr>
-                <td>2</td>
-                <td>Prasad</td>
-                <td>123</td>
-            </tr>
-        </table>
-      </section>  
-    --------------------------------------------------------------
+        <section>
+            <div>
+                <h2>Tables</h2>
+                <li>without &lt; tr &gt; it will not got to next row i.e., both &lt; th &gt; and &lt; td &gt; stay at 1st row</li>
+                <table border="2" bgcolor="yellow" width="100%">
+                    <!-- without <tr> it will not go to next row i.e., both <th> and <td> stay at 1st row -->
+                    <th>1.1.1: only th in 1st row</th>
+                    <th bgcolor="red"></th>
+                    <th bgcolor="red"></th>
 
-      <section>
-         <strong>Anurag</strong> <b>Tiwari</b>
-         <em>Anurag</em> <i>Tiwari</i>
-      </section>
-      --------------------------------------------------------------
- 
-      <section>
-       
-      </section>
+                    <td>1.1.1: only td in 1st row</td>
+                    <td bgcolor="orange"></td>
+                    <td bgcolor="orange"></td>
+                </table>
+                -----------------------------------------------------------
+                <br><br>
+                <!-- -------------------------------------------------- -->
+
+                <li>&lt; th &gt; inside the &lt; tr &gt;</li>
+                <li>&lt; td &gt; inside the &lt; tr &gt;</li>
+                <table border="2" bgcolor="yellow" width="100%">
+                    <!-- <th> inside the <tr> -->
+                    <tr bgcolor="red">
+                        <th>2.1.1: th in tr</th>
+                        <th bgcolor="white">2.1.2: th in tr</th>
+                        <th>2.1.3: th in tr</th>
+                    </tr>
+                    <!-- ---------- -->
+
+                    <!-- <td> inside the <tr> -->
+                    <tr bgcolor="orange">
+                        <td>2.2.1: td in tr</td>
+                        <td>2.2.2: td in tr</td>
+                    </tr>
+                    <tr bgcolor="orange">
+                        <td>2.3.1: td in tr</td>
+                        <td>2.3.2: td in tr</td>
+                        <td bgcolor="green">2.3.3: td in tr</td>
+                        <td>2.3.4: td in tr</td>
+                    </tr>
+                </table>
+                -----------------------------------------------------------
+                <br><br>
+                <!-- -------------------------------------------------- -->
+
+                <li>&lt; td &gt; inside &lt; th &gt; stay at 1st row</li>
+                <table border="2" bgcolor="yellow" width="100%">
+                    <!-- <td> inside <th> stay at 1st row -->
+                    <th bgcolor="red">
+                        3.1.: before td
+                        <td bgcolor="green">3.1.1: td inside th</td>
+                        3.1.: mid of td <br>
+                        <td bgcolor="green">3.1.2: td inside th</td>
+                        3.1.: after td
+                    </th>
+                </table>
+                -----------------------------------------------------------
+                <br><br>
+                <!-- -------------------------------------------------- -->
+
+                <li>&lt; th &gt; inside &lt; td &gt; stay at 1st row</li>
+                <table border="2" bgcolor="yellow" width="100%">
+                    <!-- <th> inside <td> stay at 1st row -->
+                    <td bgcolor="green">
+                        4.1.: before th
+                        <th bgcolor="red">4.1.1: th inside td</th>
+                        4.1.: mid of th <br>
+                        <th bgcolor="red">4.1.2: th inside td</th>
+                        4.1.: after th
+                    </td>
+                </table>
+            </div>
+        </section>
+        -------------------------------------------------------------------
+        <br><br>
+        <!-- ---------------------------------------------------------- -->
+         
+        <section>
+            <h2>Strong + em || b + i</h2>
+            <div>
+                <strong>Anurag</strong>
+                <em>Tiwari</em>
+            </div>
+            <!-- ---------- -->
+            <div>
+                <b>Anurag</b>
+                <i>Tiwari</i>
+            </div>
+        </section>
+        -------------------------------------------------------------------
+        <br>
+        <!-- ---------------------------------------------------------- -->
+        
     </main><br>
     -----------------------------------------------------------------------
-    <br> <br>
+    <br><br>
     <!-- -------------------------------------------------------------- -->
 
-    <footer><center>
-        &copy; Copyright
+    <footer>
+        <center>&copy; Copyright
         <h3><u>END</u></h3></center>
     </footer>
 </body>
